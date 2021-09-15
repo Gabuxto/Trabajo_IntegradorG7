@@ -51,14 +51,9 @@ form button{
     background-color:  rgb(255, 233, 194);
 }
 
-@media (min-width : 760px){
-   nav.navbar ul a{
-    width: 20%;
-    
-    
-    }
-    .navbar { 
+@media(min-width:768px) {
+    nav.navbar ul {
         display: flex;
-        flex-direction: row; }
-
+        flex-direction: row;
+    }
 }

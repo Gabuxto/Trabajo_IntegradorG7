@@ -13,10 +13,6 @@ h1{
 
 div.foto{
     display: flex;
-<<<<<<< HEAD
-
-=======
->>>>>>> 6259087ff7ade786b0ae1c730aaa2518abc0028c
 }
 
 div.foto img{
@@ -43,16 +39,13 @@ div.foto img{
 }
 
 .fecha {
-<<<<<<< HEAD
     font-family: 'Urbanist', sans-serif;
     font-size: 20px;
     
-=======
     color: rgb(90, 53, 57);
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
 
->>>>>>> 6259087ff7ade786b0ae1c730aaa2518abc0028c
 }
 
 .fechaNumero{
@@ -60,12 +53,10 @@ div.foto img{
     font-family: 'Urbanist', sans-serif;
 }
 
-<<<<<<< HEAD
 .sinopsis {
     font-family: 'Urbanist', sans-serif;
 }
-=======
-.duracion {
+.duracionTitulo {
     color: rgb(90, 53, 57);
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
@@ -87,7 +78,25 @@ div.foto img{
     letter-spacing: 0.5px;
 }
 
+.generoTitulo {
+    color: rgb(90, 53, 57);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+ 
+.generoTexto {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+}
 form button {
     font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
 }
->>>>>>> 6259087ff7ade786b0ae1c730aaa2518abc0028c
+
+@media(min-width:768px) {
+    h1 {
+        font-size: 70px;
+    }
+    
+
+}
