@@ -1,0 +1,93 @@
+html{
+    margin-left: 5px;
+}
+body{
+    background-color: rgb(250, 133, 143);
+   
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color:rgb(90, 53, 57) ;
+}
+
+div.foto{
+    display: flex;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6259087ff7ade786b0ae1c730aaa2518abc0028c
+}
+
+div.foto img{
+    width: 250px;
+    display: flex;   
+}
+
+.calificacion i {
+    color: rgb(255, 220, 66);
+}
+
+.calificacion {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.calificacion p {
+    display: block;
+    padding: 6px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fecha {
+<<<<<<< HEAD
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    
+=======
+    color: rgb(90, 53, 57);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+
+>>>>>>> 6259087ff7ade786b0ae1c730aaa2518abc0028c
+}
+
+.fechaNumero{
+    font-size: 18px;
+    font-family: 'Urbanist', sans-serif;
+}
+
+<<<<<<< HEAD
+.sinopsis {
+    font-family: 'Urbanist', sans-serif;
+}
+=======
+.duracion {
+    color: rgb(90, 53, 57);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+.duracionTexto {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+}
+
+.sinopsisTitulo  {
+    color: rgb(90, 53, 57);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.sinopsisTexto {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+form button {
+    font-family: 'Urbanist', sans-serif;
+}
+>>>>>>> 6259087ff7ade786b0ae1c730aaa2518abc0028c
