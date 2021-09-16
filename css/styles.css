@@ -27,7 +27,7 @@ h1{
     padding-top: 2px;
 }
 
-h3 {background-color: rgb(255, 233, 194);
+h2 {background-color: rgb(255, 233, 194);
     color:rgb(250, 133, 143); 
     font-size: x-large;
     font-family: 'Bebas Neue';
@@ -35,7 +35,7 @@ h3 {background-color: rgb(255, 233, 194);
     padding-left: 10px;    
 }
 
-h4  {
+h3  {
     color: rgb(90, 53, 57);
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
