@@ -11,7 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header> 
+        <div class="header">
+            <div class="logo">
+                <img src="./img/logoFinal.png" alt="Logo cabecera">       
+            </div>
+
+        <div>
+            <!--Barra de busqueda-->
+            <form action="busqueda"> 
+                <label for="busqueda"><i class="fas fa-search"></i></label>
+                <a href="./paginaBusquedas.html"><input type="text" name="busqueda"></a>
+                <a href="./paginaBusquedas.html"><button type="submit">BUSCAR</button></a>
+                
+            </form>
+        </div>
     
+                <nav class="navbar">
+    
+                    <ul type= "none">
+                        <li>
+                            <a href="./index.html" >Home</a>
+                        </li>
+                        <li >
+                            <a href="./paginaFavoritos.html" >Favoritos</a>
+                        </li>
+                        <li>
+                            <a href="./detallesGenero.html" >Generos</a>
+                        </li>  
+    
+                    </ul>
+                </nav>
+        </div>
+    </header>
 
     <h1>El Gran Hotel Budapest</h1> 
     <div class="foto">
@@ -20,9 +52,8 @@
 
     <div class="calificacion">
         <i class="fas fa-star"></i>
-        <p>8.1/10</p> 
+        <span>8.1/10</span> 
     </div>
-
     <div>
         <p class="fecha">Fecha de estreno:</p>
         <p class="fechaNumero"> 20 de Marzo, 2014</p>
@@ -51,8 +82,22 @@
     </Div>
 
     <form action="Favoritos">
-        <Button type="submit">Agregar a Favoritos</Button>
+        <a href="./paginaFavoritos.html"><Button type="submit">Agregar a Favoritos</Button></a>
     </form>
+    <footer class="F1">
+        <div>
+            <img src="./img/Image-Consulting.png" alt="samurai blanco y negro">
+            <img src="./img/Image-Consulting.png" alt="">
+            <img src="./img/Image-Consulting.png" alt="samurai blanco y negro">
+        </div>
+        <ul>
+            
+            <li>Gabriel Carrión</li>
+            <li>Lucia O´keefe</li>
+            <li>Florentina Irigaray</li>
+            
+        </ul>
+    </footer>
 
 </body>
 </html>
