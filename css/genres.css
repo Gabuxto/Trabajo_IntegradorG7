@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(250, 133, 143);
+    }
+
+
+
+h2 {background-color: rgb(255, 233, 194);
+            color:rgb(250, 133, 143); 
+            font-size: x-large;
+            font-family: 'Bebas Neue';
+            padding: 5px;
+            padding-left: 10px;
+            
+        }
+            
+ul{ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+li { 
+    padding: none;
+    margin: 35px;
+}
+
+ a {
+    color: rgb(90, 53, 57);
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    text-decoration: none;
+}
+    
+img {
+    
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    border-color: rgb(73, 52, 32);
+    border: double;
+}
+
+@media screen {
+    
+}
