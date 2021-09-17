@@ -1,4 +1,7 @@
 @import url(./header.css);
+@import url(./genres.css);
+
+
 
 body{
     background-color: rgb(250, 133, 143);
@@ -161,12 +164,16 @@ div.foto img{
     font-size: 18px;
     color: black;
     display: block;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;  
+    font-family: 'Urbanist', sans-serif;
+    text-decoration: underline;
 }
 
 form button {
     font-family: 'Urbanist', sans-serif;
     font-size: 18px;
+    margin: 20px;
+    padding: 9px;
 }
 
 

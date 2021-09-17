@@ -18,14 +18,15 @@ nav.navbar ul{
     display: flex;
     justify-content: space-around;
     flex-direction: column; 
+    align-items: flex-start;
 }
 
 nav.navbar ul a{
     color: rgb(255, 235, 235);
     display: block;
     height: 20px;
-    padding: 10px;
     font-family: 'Urbanist', sans-serif;
+    margin: 8px ;
 
 }
 .menu-mobile{

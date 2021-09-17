@@ -6,36 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generos</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/genres.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <header> 
+        <div class="header">
+            <div class="logo">
+                <img src="./img/logoFinal.png" alt="Logo cabecera">       
+            </div>
+
+        <div>
+            <!--Barra de busqueda-->
+            <form action="paginaBusquedas.html"> 
+                <label for="busqueda"><i class="fas fa-search"></i></label>
+                <input type="text" name="busqueda">
+                <button type="submit">BUSCAR</button>
+                
+            </form>
+        </div>
     
-    <section>
+                <nav class="navbar">
+    
+                    <ul type= "none">
+                        <li>
+                            <a href="./index.html" >Home</a>
+                        </li>
+                        <li >
+                            <a href="./paginaFavoritos.html" >Favoritos</a>
+                        </li>
+                        <li>
+                            <a href="./genres.html" >Generos</a>
+                        </li>  
+    
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+    <section class= genero >
         
-        <article >
+        <article>
             <h2>
                 Generos de peliculas
             </h2>
             <ul>
                 
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Drama</p>
                     <img src="./img/unnamed2.jpeg" alt="">
                 </a>
                 </li>
 
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Romance</p> 
                 <img src="./img/D5FqFYcUcAE0oZG.jpeg" alt=""></a>
                 </li>
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Acción</p> 
                     <img src="./img/8f829590614ab585b2e686c57497652f.jpeg" alt=""></a>
                 </li>
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Ciencia ficcion</p> 
 
-                    <img src="./img/36ddfb9c593743fcd245b852467a74f9.jpeg" alt=""></a>
+                    <img   src="./img/36ddfb9c593743fcd245b852467a74f9.jpeg" alt=""></a>
                 </li>
             </ul>
             
@@ -46,28 +81,42 @@
                 Generos de series
             </h2>
             <ul>
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Drama</p>
-                    <img src="./img/unnamed2.jpeg" alt="">
+                    <img class= genero src="./img/unnamed2.jpeg" alt="">
                 </a>
                 </li>
 
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Romance</p> 
-                <img src="./img/D5FqFYcUcAE0oZG.jpeg" alt=""></a>
+                <img class= genero src="./img/D5FqFYcUcAE0oZG.jpeg" alt=""></a>
                 </li>
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Acción</p> 
-                    <img src="./img/8f829590614ab585b2e686c57497652f.jpeg" alt=""></a>
+                    <img class= genero  src="./img/8f829590614ab585b2e686c57497652f.jpeg" alt=""></a>
                 </li>
-                <li><a href="">
+                <li><a href="./detallesGenero.html">
                     <p>Ciencia ficcion</p> 
 
-                    <img src="./img/36ddfb9c593743fcd245b852467a74f9.jpeg" alt=""></a>
+                    <img class= genero src="./img/36ddfb9c593743fcd245b852467a74f9.jpeg" alt=""></a>
                 </li>
             </ul>
         </article>
     </section>
+    <footer class="F1">
+        <div>
+            <img src="./img/Image-Consulting.png" alt="samurai blanco y negro">
+            <img src="./img/Image-Consulting.png" alt="">
+            <img src="./img/Image-Consulting.png" alt="samurai blanco y negro">
+        </div>
+        <ul>
+            
+            <li>Gabriel Carrión</li>
+            <li>Lucia O´keefe</li>
+            <li>Florentina Irigaray</li>
+            
+        </ul>
+    </footer>
 
 </body>
 </html>

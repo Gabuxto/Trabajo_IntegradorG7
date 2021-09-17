@@ -19,10 +19,10 @@
 
         <div>
             <!--Barra de busqueda-->
-            <form action="busqueda"> 
+            <form action="paginaBusquedas.html"> 
                 <label for="busqueda"><i class="fas fa-search"></i></label>
-                <a href="./paginaBusquedas.html"><input type="text" name="busqueda"></a>
-                <a href="./paginaBusquedas.html"><button type="submit">BUSCAR</button></a>
+                <input type="text" name="busqueda">
+                <button type="submit">BUSCAR</button>
                 
             </form>
         </div>
@@ -37,7 +37,7 @@
                             <a href="./paginaFavoritos.html" >Favoritos</a>
                         </li>
                         <li>
-                            <a href="./detallesGenero.html" >Generos</a>
+                            <a href="./genres.html" >Generos</a>
                         </li>  
     
                     </ul>
@@ -77,11 +77,10 @@
     </div>
 
     <Div>
-       <h3>Genero</h3>
-        <p class="generoTexto">Crimen/Comedia</p>
-    </Div>
+        <h3>Genero</h3>
+        <p><a class="generoTexto" href="./detallesGenero.html">Crimen/Comedia</a></p>    
 
-    <form action="Favoritos">
+    <form action="./paginaFavoritos.html">
         <a href="./paginaFavoritos.html"><Button type="submit">Agregar a Favoritos</Button></a>
     </form>
     <footer class="F1">
