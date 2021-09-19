@@ -37,11 +37,15 @@ nav.navbar ul a{
 }
 
 form{
-    display: block;
-    padding: 5px;
+    margin: 10px;
 }
 form label {
     color: rgb(73, 70, 70);
+}
+i {
+    margin: 4px;
+
+
 }
 
 form button{
@@ -51,6 +55,7 @@ form button{
     color: rgb(206, 110, 118);
     font-size: larger;
     background-color:  rgb(255, 233, 194);
+    
 
 }
 
@@ -61,6 +66,14 @@ form button{
         justify-content: center;
     }
     nav.navbar ul a {
+        margin: 10px;
+    }
+    form {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    i {
         margin: 10px;
     }
 }

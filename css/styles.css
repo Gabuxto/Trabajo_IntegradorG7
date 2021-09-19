@@ -172,7 +172,7 @@ div.foto img{
 form button {
     font-family: 'Urbanist', sans-serif;
     font-size: 18px;
-    margin: 20px;
+    margin: 15px;
     padding: 9px;
 }
 
@@ -219,4 +219,5 @@ form button {
             margin: 20px;
         }
     }
+
 }
