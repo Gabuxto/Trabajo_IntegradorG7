@@ -90,6 +90,7 @@ section img {
 .F1 {color:black;
     background:  rgb(255, 233, 194);
     padding: 15px;
+
     }
 
 .F1 div{display:flex;
@@ -123,6 +124,7 @@ footer ul {
         margin-block-end: 1px;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+        display: flex;
         }
 
 .F1 img{ max-width: 150px;max-height: 150px;
@@ -184,7 +186,7 @@ div.foto img{
 form button {
     font-family: 'Urbanist', sans-serif;
     font-size: 18px;
-    margin: 20px;
+    margin: 15px;
     padding: 9px;
 }
 
