@@ -104,8 +104,10 @@ section img {
         justify-content: space-around;
     }
 footer li {
-    font-family: 'Urbanist', sans-serif;display: flex;
-    align-self: center; flex-direction: column; 
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    align-self: center; 
+    flex-direction: column; 
     justify-content: center;
     margin: 0mm; font-size: 40px;
 
@@ -127,7 +129,8 @@ footer ul {
         display: flex;
         }
 
-.F1 img{ max-width: 150px;max-height: 150px;
+.F1 img{ 
+    max-width: 150px;max-height: 150px;
     align-self: center; margin-bottom: 10px;
 }
 
