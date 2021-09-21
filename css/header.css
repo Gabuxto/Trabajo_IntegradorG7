@@ -13,21 +13,14 @@
     margin: 7px;
 }
 nav.navbar ul{  
-    background-color: rgb(206, 110, 118);
     width: 100%;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: flex-start;
 }
 
-
 nav.navbar ul a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: rgb(255, 235, 235);
-    height: 8px;
     font-family: 'Urbanist', sans-serif;
     margin: 8px ;
     font-size: 18px;
