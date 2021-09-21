@@ -6,8 +6,8 @@
 }
 .logo img {
     width: 180px;
-    padding: 4px;
 }
+
 .navbar{
     background-color: rgb(206, 110, 118);
     margin: 7px;
@@ -21,43 +21,35 @@ nav.navbar ul{
     align-items: flex-start;
 }
 
+
 nav.navbar ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(255, 235, 235);
-    display: block;
     height: 8px;
     font-family: 'Urbanist', sans-serif;
     margin: 8px ;
     font-size: 18px;
-
-}
-.menu-mobile{
-    color: rgb(63, 94, 95);   
-}
-.menu-mobile-close{
-    color: rgb(63, 94, 95);
 }
 
 form{
     margin: 10px;
 }
-form label {
-    color: rgb(73, 70, 70);
-}
+
 i {
     margin: 4px;
-
-
+    color: rgb(73, 70, 70);
 }
 
 form button{
     border-radius: 5px;
     border-color: rgb(255, 238, 216);
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     color: rgb(206, 110, 118);
-    font-size: larger;
+    font-size: 18px;
     background-color:  rgb(255, 233, 194);
     
-
 }
 
 @media(min-width:768px) {
@@ -65,12 +57,12 @@ form button{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
     }
     nav.navbar ul a {
         margin: 10px;
         display: flex;
         align-items: center;
+
         
     }
     form {
