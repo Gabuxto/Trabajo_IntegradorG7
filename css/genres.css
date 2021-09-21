@@ -33,6 +33,7 @@ body{
     border: double;
 }
 
-@media screen {
-    
+.G1 {
+    margin: 10px;
+
 }
