@@ -8,7 +8,7 @@ body{
     margin:0px;
     }
 
-    p {
+p {
         font-family: 'Urbanist', sans-serif;
         font-size: 18px;
         margin-left: 15px;
@@ -93,42 +93,37 @@ section img {
 
     }
 
-.F1 div{display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+
     
- .F1 ul {
+.F1 ul {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+
     }
-footer li {
-    font-family: 'Urbanist', sans-serif;display: flex;
-    align-self: center; flex-direction: column; 
-    justify-content: center;
-    margin: 0mm; font-size: 40px;
+    
+.F1 li {
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-self: flex-start;
+    
 
 
 }
 
-footer p {
+.F1 p {
 
-    text-align: center; margin: 0px; font-size: 25px;
+    text-align: center; 
+    margin: 0px; 
+    font-size: 18px;
 }
 
-footer ul {
-        display: block;
-        list-style-type: none ;
-        margin-block-start: 1px;
-        margin-block-end: 1px;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        display: flex;
-        }
 
-.F1 img{ max-width: 150px;max-height: 150px;
-    align-self: center; margin-bottom: 10px;
+.F1 img{ 
+    max-width: 80px;
+    max-height: 80px;
+     margin-bottom: 10px;
+    
 }
 
 div.foto  {
@@ -222,7 +217,7 @@ form button {
         text-decoration: none;
         margin: 20px;}
     
-        .F1 ul {
+.F1 ul {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
