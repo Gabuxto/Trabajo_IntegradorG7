@@ -12,10 +12,10 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c98c63c7f5b48716db97e
 
         for (let i=0; i<info.length; i++){
             pelispopulares += `<li>
+                                    <a href="detallesPeliculas.html?id=${info[i].id}">
                                     <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
                                     <p>${info[i].title}</p>
-                                    <p>${info[i].release_date}</p>
-                                    <a href="detallesPeliculas.html?id=${info[i].id}">ver más</a>
+                                    <p>${info[i].release_date}</p></a>
                                 </li>`
         }
         tapas.innerHTML = pelispopulares;
@@ -33,17 +33,17 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=7c98c63c7f5b48716db97eead
         console.log(data.results);
         let info = data.results; 
         let tapas2 = document.querySelector('.tapas2');
-        let pelispopulares = ''; 
+        let seriesMasVistas = ''; 
 
         for (let i=0; i<info.length; i++){
-            pelispopulares += `<li>
-                                    <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
+            seriesMasVistas += `<li>
+        
+                                    <a href="detallesSeries.html?id=${info[i].id}"> <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
                                     <p>${info[i].name}</p>
-                                    <p>${info[i].first_air_date}</p>
-                                    <a href="detallesSeries.html?id=${info[i].id}">ver más</a>
+                                    <p>${info[i].first_air_date}</p></a>
                                 </li>`
         }
-        tapas2.innerHTML = pelispopulares;
+        tapas2.innerHTML = seriesMasVistas;
     })
     .catch(function(error){
         console.log(error);
@@ -60,17 +60,17 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=7c98c63c7f5b48716db97eead
         console.log(data.results);
         let info = data.results; 
         let tapas3 = document.querySelector('.tapas3');
-        let pelispopulares = ''; 
+        let masValoradas = ''; 
 
         for (let i=0; i<info.length; i++){
-            pelispopulares += `<li>
-                                    <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
+            masValoradas += `<li>
+                                
+                                    <a href="detallesPeliculas.html?id=${info[i].id}"> <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
                                     <p>${info[i].title}</p>
-                                    <p>${info[i].release_date}</p>
-                                    <a href="detallesPeliculas.html?id=${info[i].id}">ver más</a>
+                                    <p>${info[i].release_date}</p></a>
                                 </li>`
         }
-        tapas3.innerHTML = pelispopulares;
+        tapas3.innerHTML = masValoradas;
     })
     .catch(function(error){
         console.log(error);
