@@ -93,13 +93,15 @@ section li {
 
 section img {
     height: 435px;
-     width: 290px;border: groove;border-color: rgb(73, 52, 32);
+     width: 290px; 
+     border: groove; 
+     border-color: rgb(73, 52, 32);
      border-width: 20px;
     }
 
 
 .F1 {color:black;
-    background:  rgb(255, 233, 194);
+    background: rgb(255, 233, 194);
     padding: 15px;
 
     }
@@ -117,13 +119,10 @@ section img {
     display: flex;
     flex-direction: column; 
     align-self: flex-start;
-    
-
 
 }
 
 .F1 p {
-
     text-align: center; 
     margin: 0px; 
     font-size: 18px;
