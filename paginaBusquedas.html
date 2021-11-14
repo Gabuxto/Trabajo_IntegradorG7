@@ -20,10 +20,22 @@
 <section class="headerContent">
     <div>
         <!--Barra de busqueda-->
-        <form action="paginaBusquedas.html"> 
+        <form action="./paginaBusquedas.html" method="GET"> 
             <label for="busqueda"><i class="fas fa-search"></i></label>
-            <input type="text" name="busqueda">
+            <input type="text" name="busqueda" class="search" name="search" value="" placeholder="Buscar..."/>
+
+            <input type="radio" name="media" value="all" >
+            <label for="">Todo</label>
+
+            <input type="radio" name="media" value="movies" >
+            <label for="">Peliculas</label>
+
+            <input type="radio" name="media" value="series" >
+            <label for="">Series</label>
+
+            <p class="message"></p>
             <button type="submit">BUSCAR</button>
+
             
         </form>
     </div>
@@ -87,9 +99,9 @@
             <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
            <p>Florentina Irigaray</p> 
         </li>
-        
+        <img src="./img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="logo TMVD">
     </ul>
 </footer>
-
+<script src="js/index.js"></script>
 </body>
 </html>
