@@ -12,7 +12,7 @@ fetch(url)
         console.log(data);
 
         let titulo = document.querySelector('h1');
-        let imagen = document.querySelector('.portada');
+        let foto = document.querySelector('.foto');
         let calificacion = document.querySelector('.calificacionNumero');
         let estreno = document.querySelector('.fechaNumero');
         let duracion = document.querySelector('.duracionTexto');
@@ -20,7 +20,7 @@ fetch(url)
         let genero = document.querySelector('.generoTexto');
 
         titulo.innerText = data.original_title;
-        imagen.src=data.backdrop_path;
+        foto.innerHTML = `<img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="Portada">`;
         calificacion.innerText = data.vote_average;
         estreno.innerText = data.release_date;
         duracion.innerText = data.runtime;

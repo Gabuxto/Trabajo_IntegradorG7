@@ -17,7 +17,7 @@ fetch(url)
 
         //capturo el DOM 
         let titulo = document.querySelector('h1');
-        let imagen = document.querySelector('.portada');
+        let foto = document.querySelector('.foto');
         let calificacion = document.querySelector('.calificacionNumero');
         let estreno = document.querySelector('.fechaNumero');
         let sinopsis = document.querySelector('.sinopsis') ;
@@ -25,7 +25,8 @@ fetch(url)
 
         // actualizar datos y actualizar el DOM 
        titulo.innerText = data.name;
-       imagen.src=data.backdrop; 
+       foto.innerHTML = `<img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="Portada">`
+
        calificacion.innerText = data.vote_average;
        estreno.innerText = data.first_air_date;
        sinopsis.innerText = data.overview;
