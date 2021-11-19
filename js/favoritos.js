@@ -6,14 +6,19 @@ let paginaFavoritos = JSON.parse (recuperoStorage);
 console.log (paginaFavoritos);
 
 let section =document.querySelector('.lista')
-   for(let i=0; i<paginaFavoritos.length; i++){    
-    let url = 'https://api.themoviedb.org/3/tv/${paginaFavoritos[i]}'
-    fetch (url)
+let personajesFavoritos = ''
 
-    for(let i=0; i<paginaFavoritos.length; i++){    
-        let url = 'https://api.themoviedb.org/3/movie/${paginaFavoritos[i]}'
-        fetch (url)
-    
+if(Favoritos == null){
+    section.innerHTML='<h1>No hay favoritos seleccionados</h1>'
+} else {
+
+for(let i=0; i<paginaFavoritos.length; i++){    
+    buscarYMostrarFavoritos (paginaFavoritos[i])   
+}
+
+function buscarYMostrarFavoritos(id){
+let url = 'https://api.themoviedb.org/3/movie/${paginaFavoritos[i]}'
+fetch (url)
     .then ( function (response){
         return response.json();
     })
@@ -25,9 +30,10 @@ let section =document.querySelector('.lista')
           <p>Status: ${data.overview}</p>
           <a href="detalle.html?id=${data.id}">Ver más</a>
       </article>`
-    section.innerHTML = paginaFavoritos
+    section.innerHTML = paginaFavoritos;
     })
     .catch ( function (error){
         console.log(error);
     })
-   }}
+   }
+}
