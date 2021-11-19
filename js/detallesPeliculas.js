@@ -37,7 +37,6 @@ fetch(url)
                              </li> ` 
          }
          
-        
          genero.innerHTML = arrayGeneros;
          })
   
