@@ -1,6 +1,4 @@
-
-    
-//Barra de busqueda 
+ //Barra de busqueda 
 console.log('validando');
 
 let formulario = document.querySelector('form');
