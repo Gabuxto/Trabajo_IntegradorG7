@@ -6,9 +6,9 @@ let paginaFavoritos = JSON.parse (recuperoStorage);
 console.log (paginaFavoritos);
 
 let section =document.querySelector('.lista')
-let personajesFavoritos = ''
+let paginaFavoritos = ''
 
-if(Favoritos == null){
+if(paginaFavoritos == null){
     section.innerHTML='<h1>No hay favoritos seleccionados</h1>'
 } else {
 
