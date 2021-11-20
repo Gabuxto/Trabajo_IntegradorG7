@@ -11,7 +11,7 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=7c98c63c7f5b48716db
         let pelis = ''; 
         for (let i=0; i<info.length; i++){
             pelis += `<li>
-                                    <a href="detallesGenero.html?id=${info[i].id}">${info[i].name}</a>
+                                    <a href="detallesGenero.html?id=${info[i].id}&title=${info[i].name}">${info[i].name}</a>
                                 </li>`
         }
         listapelis.innerHTML = pelis;
@@ -31,7 +31,7 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=7c98c63c7f5b48716db
         let gseries = ''; 
         for (let i=0; i<info.length; i++){
             gseries += `<li>
-                                    <a href="detallesGenero.html?id=${info[i].id}">${info[i].name}</a>
+                                    <a href="detallesGenero.html?id=${info[i].id}&title=${info[i].name}">${info[i].name}</a>
                                 </li>`
         }
         listaseries.innerHTML = gseries;
@@ -39,3 +39,4 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=7c98c63c7f5b48716db
     .catch(function(error){
         console.log(error);
     })
+
