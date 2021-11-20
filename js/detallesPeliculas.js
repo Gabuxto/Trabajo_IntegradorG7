@@ -2,6 +2,7 @@ let qs = location.search;
 let qsto = new URLSearchParams(qs); 
 let idPeli = qsto.get('id'); 
 
+
 let url = `https://api.themoviedb.org/3/movie/${idPeli}?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US`;
 
 fetch(url)
@@ -33,7 +34,7 @@ fetch(url)
 
         for(let i=0; i<infoGeneros.length; i++){
              arrayGeneros += `<li>
-                             <p><a href="detallesGenero.html?id=${infoGeneros[i].id}">${infoGeneros[i].name}</a></p>
+                             <p><a href="detallesGenero.html?id=${infoGeneros[i].id}&title=${infoGeneros[i].name}">${infoGeneros[i].name}</a></p>
                              </li> ` 
          }
          
