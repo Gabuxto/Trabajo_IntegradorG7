@@ -1,7 +1,3 @@
-/* Desde la página de generos tengo q poder hacer click en uno y que me muestre todas las series 
-y pelis de ese género
- */
-
 let qs = location.search; 
 let qsto = new URLSearchParams(qs); 
 let idGenero = qsto.get('id'); 
@@ -21,10 +17,11 @@ fetch(url)
         let info = data.results; 
         let peliculas = document.querySelector('.generoPeli');
         
+        
         let pelisPorGenero = '';
         
-        let tituloGenero = document.querySelector('h1')
-        tituloGenero.innerText = `Peliculas: ${nameGenero}`
+        let tituloGeneroPeli = document.querySelector('h1')
+        tituloGeneroPeli.innerText = `Peliculas: ${nameGenero}`
 
         for (let i=0; i<info.length; i++){
             pelisPorGenero += `                   
@@ -45,11 +42,9 @@ fetch(url)
         console.log(error); 
     })
 
-    let url = `https://api.themoviedb.org/3/discover/tv?api_key=706a603dcfa5007c6f8fb245e07c8383&with_genres=${idGenero}`;
-
-    console.log(url)
     
-    fetch(url)
+    
+    fetch(`https://api.themoviedb.org/3/discover/tv?api_key=706a603dcfa5007c6f8fb245e07c8383&with_genres=${idGenero}`)
         .then(function(response){
             return response.json();
         })
@@ -59,22 +54,21 @@ fetch(url)
             let info = data.results; 
             let series = document.querySelector('.generoSerie');
             
-            let pelisPorGenero = '';
+            let SeriesPorGenero = '';
             
-            let tituloGenero = document.querySelector('h1')
-            tituloGenero.innerText = `Series: ${nameGenero}`
+            let tituloGeneroSeries = document.querySelector('h1Serie')
+            tituloGeneroSeries.innerText = `Series: ${nameGenero}`
     
             for (let i=0; i<info.length; i++){
-                pelisPorGenero += `                   
+                SeriesPorGenero += `                   
                                     <li>
-                                        <a href="detallesPeliculas.html?id=${info[i].id}"> 
+                                        <a href="detallesSeries.html?id=${info[i].id}"> 
                                         <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
                                         <p>${info[i].title}</p></a>
                                     </li>`
             }
             
-        
-            peliculas.innerHTML = pelisPorGenero;
+            series.innerHTML = SeriesPorGenero;
             
     
     
