@@ -43,3 +43,5 @@ fetch(url)
      .catch(function(error){
          console.log(error); 
      })
+
+     let paginaFavoritos
