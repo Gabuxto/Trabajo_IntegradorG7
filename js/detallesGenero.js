@@ -52,11 +52,11 @@ fetch(url)
             console.log(data);
     
             let info = data.results; 
-            let series = document.querySelector('.generoSerie');
+            let series = document.querySelector('.generoSeries');
             
             let SeriesPorGenero = '';
             
-            let tituloGeneroSeries = document.querySelector('h1Serie')
+            let tituloGeneroSeries = document.querySelector('.h1Serie')
             tituloGeneroSeries.innerText = `Series: ${nameGenero}`
     
             for (let i=0; i<info.length; i++){
