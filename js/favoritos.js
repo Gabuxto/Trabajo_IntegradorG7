@@ -17,7 +17,7 @@ for(let i=0; i<paginaFavoritos.length; i++){
 }
 
 function buscarYMostrarFavoritos(id){
-let url = 'https://api.themoviedb.org/3/movie/${paginaFavoritos[i]}'
+let url = `https://api.themoviedb.org/3/movie/${paginaFavoritos[i]}?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US`
 fetch (url)
     .then ( function (response){
         return response.json();
