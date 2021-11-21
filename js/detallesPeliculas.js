@@ -44,3 +44,40 @@ fetch(url)
      .catch(function(error){
          console.log(error); 
      })
+
+     let paginaFavoritos = [];
+
+
+     let recuperoStorage = localStorage.getItem('paginaFavoritos');
+
+     if(recuperoStorage != null) {
+         paginaFavoritos = JSON.parse(recuperoStorage);
+     }
+
+     let fav= document.querySelector('.fav');
+
+     if(fav.includes(id)){
+        fav.innerText= "Quitar de favoritos";
+     }
+    
+     fav.addEventListener ('click', function(evento){
+         evento.preventDefault();
+
+if(paginaFavoritos.includes(id)){
+    let indice =paginaFavoritos.index0f(id);
+
+    paginaFavoritos.splice(indice, 1)
+    fav.innerText="Agregar a favoritos"
+} 
+
+else {
+    paginaFavoritos.push(id);
+     fav.innerText= "Quitar de favoritos";
+    }
+
+     let favsToString = JSON.stringify (paginaFavoritos);
+
+     localStorage.setItem ('paginaFavoritos', favsToString);
+
+     console.log (localStorage);
+     })
