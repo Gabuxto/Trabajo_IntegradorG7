@@ -24,7 +24,7 @@ fetch(url)
         foto.innerHTML = `<img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="Portada">`;
         calificacion.innerText = data.vote_average;
         estreno.innerText = data.release_date;
-        duracion.innerText = data.runtime;
+        duracion.innerHTML = `<p> ${data.runtime} min </p>`;
         sinopsis.innerText = data.overview;
 
         let infoGeneros = data.genres; 
