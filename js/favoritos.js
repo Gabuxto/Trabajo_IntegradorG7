@@ -24,7 +24,7 @@ fetch (url)
         console.log (data);
        paginaFavoritos += 
        `<article>  
-       <a href="detallesSeries.html?id=${data.idSerie}"> <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}'>
+       <a href="detallesSeries.html?id=${idSerie}"> <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}'>
        <p>${data.name}</p>
        </a>
       </article>`
