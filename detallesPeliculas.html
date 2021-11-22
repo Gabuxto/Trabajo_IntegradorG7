@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Peliculas</title>
+    <title>Series</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
 
             <p class="message"></p>
             <button type="submit">BUSCAR</button>
+
             
         </form>
     </div>
@@ -51,53 +52,43 @@
 
     <h1></h1> 
     <div class="foto">
-        <img class="portada" src="" alt="Portada">
+        
     </div>
 
     <div class="calificacion">
         <i class="fas fa-star"></i>
         <span class="calificacionNumero"></span> 
     </div>
-    <div>
-        <p class="fecha">Fecha de estreno:</p>
-        <p class="fechaNumero"> </p>
-    </div>
+
+<div class="description">
+    <h3>Fecha de Estreno</h3>
+    <p class="fechaNumero"></p>
     
-    <div>
-        <h3>Duración</h3>
-        <p class="duracionTexto"></p>
-    </div> 
+    <h3>Sinopsis</h3>
+    <p class=sinopsis></p>
+
+    <h3>Genero</h3>
+    <ul class="generoTexto"></ul>        
+
+       <p><button type="submit" class="botonFavoritos">Agregar a Favoritos</button></p>
+</div>
+<footer class="F1">
+    <ul>
+        
+        <li><img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
+            <p> Gabriel Carrión</p></li>
+        <li>
+            <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
+         <p>   Lucia O´keefe</p>
+        </li>
+        <li>
+            <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
+           <p>Florentina Irigaray</p> 
+        </li>
+        <img src="./img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="logo TMVD">
+    </ul>
     
-    <div>
-        <h3>Sinopsis</h3>
-
-        <p class="sinopsisTexto"> </p>    
-    </div>
-
-    <Div>
-        <h3>Genero</h3>
-        <ul class="generoTexto"></ul>
-
-   
-        <button type="submit" class="botonFavoritos">Agregar a Favoritos</button>
-    
-    <footer class="F1">
-        <ul>
-            
-            <li><img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
-                <p> Gabriel Carrión</p></li>
-            <li>
-                <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
-             <p>   Lucia O´keefe</p>
-            </li>
-            <li>
-                <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
-               <p>Florentina Irigaray</p> 
-            </li>
-            <img src="./img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="logo TMVD">
-        </ul>
-    </footer>
-
+</footer>
     <script src="./js/detallesPeliculas.js"></script>
 </body>
 </html>

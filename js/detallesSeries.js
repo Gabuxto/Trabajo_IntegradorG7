@@ -53,7 +53,7 @@ fetch(url)
 
 let seriesFavoritos = [];
  
-let recuperoStorage = localStorage.getItem('seriesFavoritos');
+let recuperoStorage = localStorage.getItem('favoritos');
 
 if(recuperoStorage != null){
     seriesFavoritos = JSON.parse(recuperoStorage);
@@ -71,10 +71,10 @@ botonFavoritos.addEventListener ('click', function(evento){
     if(seriesFavoritos.includes(idSerie)){
    let indice = seriesFavoritos.indexOf(idSerie);
   seriesFavoritos.splice(indice, 1);
-  botonFavoritos.innerText="Quitar de favoritos"
+  botonFavoritos.innerText="Agregar a favoritos"
 } else {
    seriesFavoritos.push(idSerie);
-   botonFavoritos.innerText= "Agregar a favoritos";
+   botonFavoritos.innerText= "Quitar de favoritos";
    }
     console.log (localStorage);
 

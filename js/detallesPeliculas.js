@@ -45,38 +45,35 @@ fetch(url)
          console.log(error); 
      })
 
- let peliculasFavoritos = []
+
+     let peliculasFavoritos = [];
  
-     let recuperoStorage = localStorage.getItem('.peliculasFavoritos');
- 
-     if(recuperoStorage != null) {
-        peliculasFavoritos = JSON.parse(recuperoStorage);
+     let recuperoStorage = localStorage.getItem('favoritos');
+     
+     if(recuperoStorage != null){
+         peliculasFavoritos = JSON.parse(recuperoStorage);
      }
- 
-     let  favoritos= document.querySelector('.paginaFavoritos');
-     let   botonFavoritos=  document.querySelector('.botonFavoritos')
- 
-     if(peliculasFavoritos.includes(id)){
+     
+     let  botonFavoritos=  document.querySelector('.botonFavoritos')
+     
+     if(peliculasFavoritos.includes(idPeli)){
          botonFavoritos.innerText= "Quitar de favoritos";
      }
-   
+       
      botonFavoritos.addEventListener ('click', function(evento){
          evento.preventDefault();
- 
-if(peliculasFavoritos.includes(id)){
-    let indice =peliculasFavoritos.index0f(id);
-   peliculasFavoritos.splice(indice, 1);
-   botonFavoritos.innerText="Agregar a favoritos"
-}
- 
-else {
-    peliculasFavoritos.push(id);
-    botonFavoritos.innerText= "Quitar de favoritos";
-    }
-console.log (localStorage);
- 
-     let   paginaFavoritosToString = JSON.stringify (peliculasFavoritos);
- 
-     localStorage.setItem  ('peliculasFavoritos',paginaFavoritosToString);
-     })
-
+     
+         if(peliculasFavoritos.includes(idPeli)){
+        let indice = peliculasFavoritos.indexOf(idPeli);
+      peliculasFavoritos.splice(indice, 1);
+       botonFavoritos.innerText="Agregar a favoritos"
+     } else {
+        peliculasFavoritos.push(idPeli);
+        botonFavoritos.innerText= "Quitar de favoritos";
+        }
+         console.log (localStorage);
+     
+         let   paginaFavoritosToString = JSON.stringify (peliculasFavoritos);
+     
+         localStorage.setItem  ('peliculassFavoritos',paginaFavoritosToString);
+         })

@@ -1,4 +1,3 @@
-
 let recuperoStorage = localStorage.getItem('seriesFavoritos')
 
 let favoritos = JSON.parse (recuperoStorage);
@@ -8,8 +7,9 @@ let section = document.querySelector('.lista');
 let paginaFavoritos = '';
 
 if(favoritos == null || favoritos.length == 0){
-    section.innerHTML='<h1>No hay favoritos seleccionados</h1>'
-} else {
+    section.innerHTML='<h2>No hay favoritos seleccionados</h2>'
+}
+else {
 for(let i=0; i<favoritos.length; i++){    
     buscarYMostrarFavoritos (favoritos[i])   
 }
@@ -24,14 +24,15 @@ fetch (url)
         console.log (data);
        paginaFavoritos += 
        `<article>  
-       <a href="detallesSeries.html?id=${data.idSerie}"> <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}'>
+       <a href="detallesSeries.html?id=${idSerie}"> <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}'>
        <p>${data.name}</p>
        </a>
       </article>`
+  
     section.innerHTML = paginaFavoritos;
     })
-    .catch ( function (error){
+.catch ( function (error){
         console.log(error);
-    })
-   }
-}
+})
+
+}}
