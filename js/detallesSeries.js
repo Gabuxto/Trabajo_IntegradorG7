@@ -1,5 +1,4 @@
- 
-let qs = location.search; 
+ let qs = location.search; 
 let qsto = new URLSearchParams(qs); 
 let idSerie = qsto.get('id'); 
 
@@ -56,11 +55,11 @@ let seriesFavoritos = [];
  
 let recuperoStorage = localStorage.getItem('seriesFavoritos');
 
-if(recuperoStorage != null) {
+if(recuperoStorage != null){
     seriesFavoritos = JSON.parse(recuperoStorage);
 }
 
-let  botonFavoritos =  document.querySelector('.botonFavoritos')
+let  botonFavoritos=  document.querySelector('.botonFavoritos')
 
 if(seriesFavoritos.includes(idSerie)){
     botonFavoritos.innerText= "Quitar de favoritos";
@@ -70,12 +69,12 @@ botonFavoritos.addEventListener ('click', function(evento){
     evento.preventDefault();
 
     if(seriesFavoritos.includes(idSerie)){
-   let indice = seriesFavoritos.indexOf(id);
+   let indice = seriesFavoritos.indexOf(idSerie);
   seriesFavoritos.splice(indice, 1);
-  botonFavoritos.innerText="Agregar a favoritos"
+  botonFavoritos.innerText="Quitar de favoritos"
 } else {
    seriesFavoritos.push(idSerie);
-   botonFavoritos.innerText= "Quitar de favoritos";
+   botonFavoritos.innerText= "Agregar a favoritos";
    }
     console.log (localStorage);
 

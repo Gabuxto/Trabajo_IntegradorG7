@@ -1,20 +1,21 @@
-let recuperoStorage = localStorage.getItem('favoritos')
+
+let recuperoStorage = localStorage.getItem('seriesFavoritos')
 
 let favoritos = JSON.parse (recuperoStorage);
+console.log(favoritos);
 
+let section = document.querySelector('.lista');
+let paginaFavoritos = '';
 
-let section = document.querySelector('.lista')
-let paginaFavoritos = ''
-
-if(paginaFavoritos == null){
+if(favoritos == null || favoritos.length == 0){
     section.innerHTML='<h1>No hay favoritos seleccionados</h1>'
 } else {
-for(let i=0; i<paginaFavoritos.length; i++){    
-    buscarYMostrarFavoritos (paginaFavoritos[i])   
+for(let i=0; i<favoritos.length; i++){    
+    buscarYMostrarFavoritos (favoritos[i])   
 }
 
-function buscarYMostrarFavoritos(id){
-let url = `https://api.themoviedb.org/3/${id}?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US`;
+function buscarYMostrarFavoritos(idSerie){
+let url = `https://api.themoviedb.org/3/tv/${idSerie}?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US`;
 fetch (url)
     .then ( function (response){
         return response.json();
@@ -22,10 +23,10 @@ fetch (url)
     .then ( function (data){
         console.log (data);
        paginaFavoritos += 
-       `<article> <img src=${data.imagen}> 
-          <p>Nombre: ${data.name} </p>
-          <p>Status: ${data.overview}</p>
-          <a href="detalle.html?id=${data.id}">Ver más</a>
+       `<article>  
+       <a href="detallesSeries.html?id=${data.idSerie}"> <img src='https://image.tmdb.org/t/p/w342/${data.poster_path}'>
+       <p>${data.name}</p>
+       </a>
       </article>`
     section.innerHTML = paginaFavoritos;
     })
