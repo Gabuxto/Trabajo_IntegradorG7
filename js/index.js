@@ -96,5 +96,5 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=7c98c63c7f5b48716db97eead
         tapas3.innerHTML = masValoradas;
     })
     .catch(function(error){
-        alert('Error! dispule las molestias');
+        alert('Error! disculpe las molestias');
     })
