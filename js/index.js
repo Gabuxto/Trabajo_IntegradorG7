@@ -44,7 +44,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c98c63c7f5b48716db97e
         tapas.innerHTML = pelispopulares;
     })
     .catch(function(error){
-        console.log(error);
+        alert('Error! disculpe las molestias');
     })
 //series mas vistas
 
@@ -69,7 +69,7 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=7c98c63c7f5b48716db97eead
         tapas2.innerHTML = seriesMasVistas;
     })
     .catch(function(error){
-        console.log(error);
+        alert('Error! disculpe las molestias');
     })
 
 
@@ -96,5 +96,5 @@ fetch('https://api.themoviedb.org/3/tv/popular?api_key=7c98c63c7f5b48716db97eead
         tapas3.innerHTML = masValoradas;
     })
     .catch(function(error){
-        console.log(error);
+        alert('Error! disculpe las molestias');
     })
