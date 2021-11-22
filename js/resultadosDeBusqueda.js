@@ -36,7 +36,15 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=706a603dcfa5007c6f8fb24
                              </li>` }
 
 resultado.innerHTML = resultadosPelis;
+
 })
+
 .catch(function(error){ 
     console.log(error); 
 })
+
+
+
+
+
+
