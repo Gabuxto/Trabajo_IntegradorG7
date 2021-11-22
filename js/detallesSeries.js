@@ -82,4 +82,4 @@ botonFavoritos.addEventListener ('click', function(evento){
     let   paginaFavoritosToString = JSON.stringify (seriesFavoritos);
 
     localStorage.setItem  ('seriesFavoritos',paginaFavoritosToString);
-})
+    })
