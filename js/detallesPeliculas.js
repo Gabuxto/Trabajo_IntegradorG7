@@ -47,7 +47,7 @@ fetch(url)
 
  let peliculasFavoritos = []
  
-     let recuperoStorage = localStorage.getItem('peliculasFavoritos');
+     let recuperoStorage = localStorage.getItem('.peliculasFavoritos');
  
      if(recuperoStorage != null) {
         peliculasFavoritos = JSON.parse(recuperoStorage);
@@ -60,7 +60,7 @@ fetch(url)
          botonFavoritos.innerText= "Quitar de favoritos";
      }
    
-     paginaFavoritos.addEventListener ('click', function(evento){
+     botonFavoritos.addEventListener ('click', function(evento){
          evento.preventDefault();
  
 if(peliculasFavoritos.includes(id)){

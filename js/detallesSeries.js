@@ -60,18 +60,17 @@ fetch(url)
        seriesFavoritos = JSON.parse(recuperoStorage);
     }
 
-    let  favoritos= document.querySelector('.paginaFavoritos');
-    let   botonFavoritos=  document.querySelector('.botonFavoritos')
+    let  botonFavoritos=  document.querySelector('.botonFavoritos')
 
     if(seriesFavoritos.includes(id)){
         botonFavoritos.innerText= "Quitar de favoritos";
     }
   
-    paginaFavoritos.addEventListener ('click', function(evento){
+     botonFavoritos.addEventListener ('click', function(evento){
         evento.preventDefault();
 
 if(seriesFavoritos.includes(id)){
-   let indice =seriesFavoritos.index0f(id);
+   let indice =seriesFavoritos.indexOf(id);
   seriesFavoritos.splice(indice, 1);
   botonFavoritos.innerText="Agregar a favoritos"
 }

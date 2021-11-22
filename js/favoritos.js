@@ -1,16 +1,14 @@
-console.log('paginaFavoritos');
+let recuperoStorage = localStorage.getItem('favoritos')
 
-let recuperoStorage = localStorage.getItem('paginaFavoritos')
-
-let paginaFavoritos = JSON.parse (recuperoStorage);
-console.log (paginaFavoritos);
+let favoritos = JSON.parse (recuperoStorage);
+console.log (favoritos);
 
 let section =document.querySelector('.lista')
 let paginaFavoritos = ''
+
 if(paginaFavoritos == null){
     section.innerHTML='<h1>No hay favoritos seleccionados</h1>'
 } else {
-
 for(let i=0; i<paginaFavoritos.length; i++){    
     buscarYMostrarFavoritos (paginaFavoritos[i])   
 }
