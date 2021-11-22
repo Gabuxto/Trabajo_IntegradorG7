@@ -186,9 +186,13 @@ div.foto img{
     text-decoration: underline;
 }
 
-form button {
+button {
+    border-radius: 5px;
+    border-color: rgb(255, 238, 216);
     font-family: 'Urbanist', sans-serif;
+    color: rgb(206, 110, 118);
     font-size: 18px;
+    background-color:  rgb(255, 233, 194);
     margin: 15px;
     padding: 9px;
 }

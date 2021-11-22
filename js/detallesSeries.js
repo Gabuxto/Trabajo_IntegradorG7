@@ -58,7 +58,7 @@ fetch(url)
        seriesFavoritos = JSON.parse(recuperoStorage);
     }
 
-    let  botonFavoritos=  document.querySelector('.botonFavoritos')
+    let  botonFavoritos =  document.querySelector('.botonFavoritos')
 
     if(seriesFavoritos.includes(id)){
         botonFavoritos.innerText= "Quitar de favoritos";
@@ -68,7 +68,7 @@ fetch(url)
         evento.preventDefault();
 
 if(seriesFavoritos.includes(id)){
-   let indice =seriesFavoritos.indexOf(id);
+   let indice = seriesFavoritos.indexOf(id);
   seriesFavoritos.splice(indice, 1);
   botonFavoritos.innerText="Agregar a favoritos"
 }
