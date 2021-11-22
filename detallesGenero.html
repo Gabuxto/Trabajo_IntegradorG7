@@ -20,9 +20,11 @@
 <section class="headerContent">
     <div>
         <!--Barra de busqueda-->
-        <form action="paginaBusquedas.html"> 
+        <form action="./paginaBusquedas.html" method="GET"> 
             <label for="busqueda"><i class="fas fa-search"></i></label>
-            <input type="text" name="busqueda">
+            <input type="text" name="query" class="search" value="" placeholder="Buscar..."/>
+
+            <p class="message"></p>
             <button type="submit">BUSCAR</button>
             
         </form>
