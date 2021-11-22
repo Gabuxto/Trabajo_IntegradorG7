@@ -55,39 +55,39 @@ fetch(url)
     let paginaFavoritos = [];
 
 
-    let recuperoStorage = localStorage.getItem('paginaFavoritos');
+     let recuperoStorage = localStorage.getItem('paginaFavoritos');
 
-    if(recuperoStorage != null) {
-        paginaFavoritos = JSON.parse(recuperoStorage);
-    }
+     if(recuperoStorage != null) {
+         paginaFavoritos = JSON.parse(recuperoStorage);
+     }
 
-    let fav= document.querySelector('.fav');
+     let   paginaFavoritos= document.querySelector('.fav');
 
-    if(fav.includes(id)){
-       fav.innerText= "Quitar de favoritos";
-    }
-   
-    fav.addEventListener ('click', function(evento){
-        evento.preventDefault();
+     if(paginaFavoritos.includes(id)){
+        paginaFavoritos.innerText= "Quitar de favoritos";
+     }
+    
+     paginaFavoritos.addEventListener ('click', function(evento){
+         evento.preventDefault();
 
 if(paginaFavoritos.includes(id)){
-   let indice =paginaFavoritos.index0f(id);
+    let indice =paginaFavoritos.index0f(id);
 
-   paginaFavoritos.splice(indice, 1)
-   fav.innerText="Agregar a favoritos"
+    paginaFavoritos.splice(indice, 1)
+    paginaFavoritos.innerText="Agregar a favoritos"
 } 
 
 else {
-   paginaFavoritos.push(id);
-    fav.innerText= "Quitar de favoritos";
-   }
+    paginaFavoritos.push(id);
+    paginaFavoritos.innerText= "Quitar de favoritos";
+    }
 
-    let favsToString = JSON.stringify (paginaFavoritos);
+     let   paginaFavoritosToString = JSON.stringify (paginaFavoritos);
 
-    localStorage.setItem ('paginaFavoritos', favsToString);
+     localStorage.setItem ('paginaFavoritos',   paginaFavoritosToString);
 
-    console.log (localStorage);
-    })
+     console.log (localStorage);
+     })
 
 
 

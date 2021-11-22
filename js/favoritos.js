@@ -1,4 +1,4 @@
-console.log('favoritos');
+console.log('paginaFavoritos');
 
 let recuperoStorage = localStorage.getItem('paginaFavoritos')
 
@@ -7,7 +7,6 @@ console.log (paginaFavoritos);
 
 let section =document.querySelector('.lista')
 let paginaFavoritos = ''
-
 if(paginaFavoritos == null){
     section.innerHTML='<h1>No hay favoritos seleccionados</h1>'
 } else {
@@ -17,7 +16,7 @@ for(let i=0; i<paginaFavoritos.length; i++){
 }
 
 function buscarYMostrarFavoritos(id){
-let url = `https://api.themoviedb.org/3/movie/${paginaFavoritos[i]}?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US`
+let url = `https://api.themoviedb.org/3/${id}?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US`;
 fetch (url)
     .then ( function (response){
         return response.json();
