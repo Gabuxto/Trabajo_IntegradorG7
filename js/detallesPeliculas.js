@@ -24,7 +24,7 @@ fetch(url)
         foto.innerHTML = `<img src="https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="Portada">`;
         calificacion.innerText = data.vote_average;
         estreno.innerText = data.release_date;
-        duracion.innerHTML = `<p> ${data.runtime} min </p>`;
+        duracion.innerText = data.runtime;
         sinopsis.innerText = data.overview;
 
         let infoGeneros = data.genres; 
@@ -45,6 +45,7 @@ fetch(url)
          console.log(error); 
      })
 
+    
      let paginaFavoritos = [];
 
 
@@ -54,30 +55,30 @@ fetch(url)
          paginaFavoritos = JSON.parse(recuperoStorage);
      }
 
-     let fav= document.querySelector('.fav');
+     let   paginaFavoritos= document.querySelector('.fav');
 
-     if(fav.includes(id)){
-        fav.innerText= "Quitar de favoritos";
+     if(paginaFavoritos.includes(id)){
+        paginaFavoritos.innerText= "Quitar de favoritos";
      }
     
-     fav.addEventListener ('click', function(evento){
+     paginaFavoritos.addEventListener ('click', function(evento){
          evento.preventDefault();
 
 if(paginaFavoritos.includes(id)){
     let indice =paginaFavoritos.index0f(id);
 
     paginaFavoritos.splice(indice, 1)
-    fav.innerText="Agregar a favoritos"
+    paginaFavoritos.innerText="Agregar a favoritos"
 } 
 
 else {
     paginaFavoritos.push(id);
-     fav.innerText= "Quitar de favoritos";
+    paginaFavoritos.innerText= "Quitar de favoritos";
     }
 
-     let favsToString = JSON.stringify (paginaFavoritos);
+     let   paginaFavoritosToString = JSON.stringify (paginaFavoritos);
 
-     localStorage.setItem ('paginaFavoritos', favsToString);
+     localStorage.setItem ('paginaFavoritos',   paginaFavoritosToString);
 
      console.log (localStorage);
      })
