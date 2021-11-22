@@ -44,43 +44,42 @@ fetch(url)
         console.log(arrayGeneros)
 
         genero.innerHTML = arrayGeneros; 
-        })
- 
+        
+    })
+    
     .catch(function(error){
         console.log(error); 
     })
 
-    let seriesFavoritos = []
+
+let seriesFavoritos = [];
  
-    let recuperoStorage = localStorage.getItem('seriesFavoritos');
+let recuperoStorage = localStorage.getItem('seriesFavoritos');
 
-    if(recuperoStorage != null) {
-       seriesFavoritos = JSON.parse(recuperoStorage);
-    }
+if(recuperoStorage != null) {
+    seriesFavoritos = JSON.parse(recuperoStorage);
+}
 
-    let  botonFavoritos =  document.querySelector('.botonFavoritos')
+let  botonFavoritos =  document.querySelector('.botonFavoritos')
 
-    if(seriesFavoritos.includes(id)){
-        botonFavoritos.innerText= "Quitar de favoritos";
-    }
+if(seriesFavoritos.includes(idSerie)){
+    botonFavoritos.innerText= "Quitar de favoritos";
+}
   
-     botonFavoritos.addEventListener ('click', function(evento){
-        evento.preventDefault();
+botonFavoritos.addEventListener ('click', function(evento){
+    evento.preventDefault();
 
-if(seriesFavoritos.includes(id)){
+    if(seriesFavoritos.includes(idSerie)){
    let indice = seriesFavoritos.indexOf(id);
   seriesFavoritos.splice(indice, 1);
   botonFavoritos.innerText="Agregar a favoritos"
-}
-
-else {
-   seriesFavoritos.push(id);
+} else {
+   seriesFavoritos.push(idSerie);
    botonFavoritos.innerText= "Quitar de favoritos";
    }
-console.log (localStorage);
+    console.log (localStorage);
 
     let   paginaFavoritosToString = JSON.stringify (seriesFavoritos);
 
     localStorage.setItem  ('seriesFavoritos',paginaFavoritosToString);
-    })
-
+})

@@ -1,9 +1,9 @@
 let recuperoStorage = localStorage.getItem('favoritos')
 
 let favoritos = JSON.parse (recuperoStorage);
-console.log (favoritos);
 
-let section =document.querySelector('.lista')
+
+let section = document.querySelector('.lista')
 let paginaFavoritos = ''
 
 if(paginaFavoritos == null){
