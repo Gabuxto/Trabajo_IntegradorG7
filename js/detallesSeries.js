@@ -52,44 +52,38 @@ fetch(url)
         console.log(error); 
     })
 
-    let paginaFavoritos = [];
+    let seriesFavoritos = []
+ 
+    let recuperoStorage = localStorage.getItem('seriesFavoritos');
 
-
-     let recuperoStorage = localStorage.getItem('paginaFavoritos');
-
-     if(recuperoStorage != null) {
-         paginaFavoritos = JSON.parse(recuperoStorage);
-     }
-
-     let   paginaFavoritos= document.querySelector('.fav');
-
-     if(paginaFavoritos.includes(id)){
-        paginaFavoritos.innerText= "Quitar de favoritos";
-     }
-    
-     paginaFavoritos.addEventListener ('click', function(evento){
-         evento.preventDefault();
-
-if(paginaFavoritos.includes(id)){
-    let indice =paginaFavoritos.index0f(id);
-
-    paginaFavoritos.splice(indice, 1)
-    paginaFavoritos.innerText="Agregar a favoritos"
-} 
-
-else {
-    paginaFavoritos.push(id);
-    paginaFavoritos.innerText= "Quitar de favoritos";
+    if(recuperoStorage != null) {
+       seriesFavoritos = JSON.parse(recuperoStorage);
     }
 
-     let   paginaFavoritosToString = JSON.stringify (paginaFavoritos);
+    let  favoritos= document.querySelector('.paginaFavoritos');
+    let   botonFavoritos=  document.querySelector('.botonFavoritos')
 
-     localStorage.setItem ('paginaFavoritos',   paginaFavoritosToString);
+    if(seriesFavoritos.includes(id)){
+        botonFavoritos.innerText= "Quitar de favoritos";
+    }
+  
+    paginaFavoritos.addEventListener ('click', function(evento){
+        evento.preventDefault();
 
-     console.log (localStorage);
-     })
+if(seriesFavoritos.includes(id)){
+   let indice =seriesFavoritos.index0f(id);
+  seriesFavoritos.splice(indice, 1);
+  botonFavoritos.innerText="Agregar a favoritos"
+}
 
+else {
+   seriesFavoritos.push(id);
+   botonFavoritos.innerText= "Quitar de favoritos";
+   }
+console.log (localStorage);
 
+    let   paginaFavoritosToString = JSON.stringify (seriesFavoritos);
 
-
+    localStorage.setItem  ('seriesFavoritos',paginaFavoritosToString);
+    })
 
