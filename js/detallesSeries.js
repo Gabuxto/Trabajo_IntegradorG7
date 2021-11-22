@@ -40,8 +40,6 @@ fetch(url)
                             <p><a href="detallesGenero.html?id=${infoGeneros[i].id}&title=${infoGeneros[i].name}">${infoGeneros[i].name}</a></p>
                             </li> ` 
 
-                // Me falta que al clickear un genero la pagina me lleve a ese 
-                // Me falta lograr que se vea la foto 
         }
         console.log(arrayGeneros)
 
