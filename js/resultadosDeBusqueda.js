@@ -13,7 +13,7 @@ Si la búsqueda tarda en cargar deberá aparecer un spinner, gif animado o mensa
 
 let qs = location.search; 
 let qsto = new URLSearchParams(qs); 
-let idResultado = qsto.get('results'); 
+let idResultado = qsto.get('query'); 
 
 // Resultado multiple 
 
