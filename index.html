@@ -1,101 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logoFinal.png" alt="Logo cabecera" />
+      </div>
 
-<header> 
-     <div class="logo">
-                <img src="./img/logoFinal.png" alt="Logo cabecera">       
-     </div>
-
-    <section class="headerContent">
-    <div>
-        <!--Barra de busqueda-->
-        <form action="./paginaBusquedas.html" method="GET"> 
+      <section class="headerContent">
+        <div>
+          <!--Barra de busqueda-->
+          <form action="./paginaBusquedas.html" method="GET">
             <label for="busqueda"><i class="fas fa-search"></i></label>
-            <input type="text" name="query" class="search" value="" placeholder="Buscar..."/>
+            <input type="text" name="query" class="search" value="" placeholder="Buscar..." />
 
             <p class="message"></p>
             <button type="submit">BUSCAR</button>
+          </form>
+        </div>
+        <nav class="navbar">
+          <ul type="none">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./paginaFavoritos.html">Favoritos</a>
+            </li>
+            <li>
+              <a href="./genres.html">Generos</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h2>Peliculas más Populares</h2>
+          <ul class="tapas"></ul>
+        </article>
+        <article>
+          <h2>Lo más visto en series</h2>
+          <ul class="tapas2"></ul>
+        </article>
 
-            
-        </form>
-    </div>
-            <nav class="navbar">
-
-                <ul type= "none">
-                    <li>
-                        <a href="./index.html" >Home</a>
-                    </li>
-                    <li >
-                        <a href="./paginaFavoritos.html" >Favoritos</a>
-                    </li>
-                    <li>
-                        <a href="./genres.html" >Generos</a>
-                    </li>  
-
-                </ul>
-            </nav>
-
-    </section>
-</header>
-<main>
-        <section>
-            <article>
-                <h2>Peliculas más Populares</h2>
-                <ul class="tapas">
-                    
-                </ul>
-            </article>
-            <article>
-                <h2>Lo más visto en series</h2>
-                <ul class="tapas2">
-                   
-                    
-                </ul>
-            </article>
-            
-            <article>
-                <h2>Peliculas más valoradas</h2>
-                <ul class="tapas3">
-                   
-                </ul>    
-            </article>
-
-           
-        </section>
-   
+        <article>
+          <h2>Peliculas más valoradas</h2>
+          <ul class="tapas3"></ul>
+        </article>
+      </section>
     </main>
     <footer class="F1">
-        <ul>
-            
-            <li><img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
-                <p> Gabriel Carrión</p></li>
-            <li>
-                <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
-             <p>   Lucia O´Keefe</p>
-            </li>
-            <li>
-                <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa">
-               <p>Florentina Irigaray</p> 
-            </li>
-            <img src="./img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="logo TMVD">
-        </ul>
+      <ul>
+        <li>
+          <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa" />
+          <p>Gabriel Carrión</p>
+        </li>
+        <li>
+          <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa" />
+          <p>Lucia O´Keefe</p>
+        </li>
+        <li>
+          <img src="./img/Image-Consulting.png" alt="rollo Cinematrogrofo rosa" />
+          <p>Florentina Irigaray</p>
+        </li>
+        <img
+          src="./img/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+          alt="logo TMVD"
+        />
+      </ul>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/favoritos.js"></script>
-    <script src="js/detallesPeliculas.js"></script>
-    <script src="js/detallesSeries.js"></script>
-</body>
-
+  </body>
 </html>
