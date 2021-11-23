@@ -91,6 +91,18 @@ section li {
     margin:7px 0 0 0;
 }
 
+.tenor-gif-embed {
+
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 50%;
+}
+.gif {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+}
 section img {
     height: 435px;
      width: 290px; 
@@ -235,6 +247,7 @@ button {
             justify-content: space-around;
         }
 }
+
 @media (min-width: 1024px){
 
     footer p {
