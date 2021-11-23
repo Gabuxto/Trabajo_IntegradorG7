@@ -9,7 +9,7 @@ console.log(favoritosSerie);
 
 let section = document.querySelector(".lista");
 
-if ((favoritosPelis == null || !favoritosPelis) && (favoritosSerie == null || !favoritosSerie)) {
+if ((favoritosPelis == null || !favoritosPelis || !favoritosPelis.length) && (favoritosSerie == null || !favoritosSerie || !favoritosSerie.length) ) {
   section.innerHTML = "<h2>No hay favoritos seleccionados</h2>";
 } else {
   if (favoritosPelis != null || favoritosPelis) {
