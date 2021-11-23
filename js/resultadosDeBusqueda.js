@@ -11,13 +11,14 @@ Si la búsqueda tarda en cargar deberá aparecer un spinner, gif animado o mensa
 // https://api.themoviedb.org/3/search/keyword?api_key=706a603dcfa5007c6f8fb245e07c8383
 
 
+
 let qs = location.search; 
 let qsto = new URLSearchParams(qs); 
 let idResultado = qsto.get('query'); 
 
 // Resultado multiple 
 
-fetch(`https://api.themoviedb.org/3/search/movie?api_key=706a603dcfa5007c6f8fb245e07c8383&query=${idResultado}`)
+fetch(`https://api.themoviedb.org/3/search/multi?api_key=706a603dcfa5007c6f8fb245e07c8383&query=${idResultado}`)
 .then(function(response){
     return response.json();
 })
@@ -27,14 +28,18 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=706a603dcfa5007c6f8fb24
     let resultado = document.querySelector('.resultados');
     let resultadosPelis = '';
 
-    for (let i=0; i<info.length; i++){
-        resultadosPelis += `<li> 
-        
-                             <a href="detallesPeliculas.html?id=${info[i].id}">
-                             <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
-                              <p>${info[i].original_title}</p></a>
-                             </li>` }
-
+    if(info.length > 0 ){
+        for (let i=0; i<info.length; i++){
+            resultadosPelis += `<li> 
+            
+                                 <a href="detallesPeliculas.html?id=${info[i].id}">
+                                 <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
+                                  <p>${info[i].original_title}</p></a>
+                                 </li>` }
+    }else{
+        resultadosPelis = '<p> No se encontraron resultados </p>'
+    }
+   
 resultado.innerHTML = resultadosPelis;
 
 })

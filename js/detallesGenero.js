@@ -64,9 +64,11 @@ fetch(url)
                                     <li>
                                         <a href="detallesSeries.html?id=${info[i].id}"> 
                                         <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
-                                        <p>${info[i].title}</p></a>
+                                        <p>${info[i].name}</p></a>
                                     </li>`
             }
+
+            
             
             series.innerHTML = SeriesPorGenero;
             

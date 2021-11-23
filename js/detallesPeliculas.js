@@ -1,3 +1,4 @@
+
 let qs = location.search; 
 let qsto = new URLSearchParams(qs); 
 let idPeli = qsto.get('id'); 
@@ -30,6 +31,8 @@ fetch(url)
         let infoGeneros = data.genres; 
         let arrayGeneros = '';
 
+        console.log(data.overview)
+
         console.log(infoGeneros)
 
         for(let i=0; i<infoGeneros.length; i++){
@@ -40,7 +43,7 @@ fetch(url)
          
          genero.innerHTML = arrayGeneros;
          })
-  
+
      .catch(function(error){
          console.log(error); 
      })

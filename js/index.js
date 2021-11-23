@@ -1,26 +1,4 @@
- //Barra de busqueda 
-console.log('validando');
 
-let formulario = document.querySelector('form');
-let inputField =  document.querySelector('.search');
-let message =  document.querySelector('.message');
-
-formulario.addEventListener('submit', function(evento){
-    evento.preventDefault()
-    console.log('No me mando...'); 
-
-    if(inputField.value == "") {
-        message.innerText = "El campo es obligatorio"
-    } else if (inputField.value.length < 3){
-        message.innerText = "Debes escribir al menos 3 caracteres"
-    } else {
-        this.submit()
-    } 
-})
-
-inputField.addEventListener('focus' , function(){
-    message.innerText = ''; 
-})
 
 //mas populares
 fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c98c63c7f5b48716db97eeade9c8a32&language=en-US&page=1')
