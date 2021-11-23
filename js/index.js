@@ -45,6 +45,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?api_key=7c98c63c7f5b48716db97e
     })
     .catch(function(error){
         alert('Error! disculpe las molestias');
+        console.log(error);
     })
 //series mas vistas
 

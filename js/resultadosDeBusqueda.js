@@ -14,6 +14,10 @@ Si la búsqueda tarda en cargar deberá aparecer un spinner, gif animado o mensa
 let qs = location.search; 
 let qsto = new URLSearchParams(qs); 
 let idResultado = qsto.get('query'); 
+window.onload = detectarCarga;
+function detectarCarga(){
+   document.querySelector(".gif").style.display="none";
+}
 
 // Resultado multiple 
 
@@ -26,7 +30,7 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=706a603dcfa5007c6f8fb24
     let info = data.results;
     let resultado = document.querySelector('.resultados');
     let resultadosPelis = '';
-
+    
     for (let i=0; i<info.length; i++){
         resultadosPelis += `<li> 
         
@@ -34,9 +38,10 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=706a603dcfa5007c6f8fb24
                              <img src='https://image.tmdb.org/t/p/w342/${info[i].poster_path}'>
                               <p>${info[i].original_title}</p></a>
                              </li>` }
-
 resultado.innerHTML = resultadosPelis;
-})
+    })
 .catch(function(error){ 
     console.log(error); 
 })
+
+
