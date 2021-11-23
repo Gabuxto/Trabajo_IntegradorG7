@@ -53,7 +53,7 @@ fetch(url)
 
 let seriesFavoritos = [];
  
-let recuperoStorage = localStorage.getItem('seriesFavoritos');
+let recuperoStorage = localStorage.getItem('favoritos');
 
 if(recuperoStorage != null){
     seriesFavoritos = JSON.parse(recuperoStorage);
